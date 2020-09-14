@@ -1,4 +1,4 @@
-const googlePage = require("../../page/googlePage")
+import googlePage from "../../page/googlePage"
 
 describe ("Google Search test", function () {
 
