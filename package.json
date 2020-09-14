@@ -15,5 +15,18 @@
   "bugs": {
     "url": "https://github.com/shahzeb3939/assignmentEmumba/issues"
   },
-  "homepage": "https://github.com/shahzeb3939/assignmentEmumba#readme"
+  "homepage": "https://github.com/shahzeb3939/assignmentEmumba#readme",
+  "devDependencies": {
+    "@wdio/local-runner": "^6.5.0",
+    "@wdio/mocha-framework": "^6.5.0",
+    "@wdio/selenium-standalone-service": "^6.4.7",
+    "@wdio/spec-reporter": "^6.4.7",
+    "@wdio/sync": "^6.5.0",
+    "chai": "^4.2.0",
+    "chai-webdriverio": "^1.0.0",
+    "webdriverio": "^6.5.0"
+  },
+  "dependencies": {
+    "@wdio/cli": "^6.5.0"
+  }
 }
