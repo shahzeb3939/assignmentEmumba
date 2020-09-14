@@ -1,0 +1,19 @@
+{
+  "name": "assignmentemumba",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahzeb3939/assignmentEmumba.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shahzeb3939/assignmentEmumba/issues"
+  },
+  "homepage": "https://github.com/shahzeb3939/assignmentEmumba#readme"
+}
