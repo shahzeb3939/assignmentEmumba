@@ -7,7 +7,7 @@ class googlePage {
     linkReturn(link) {
         switch(link) {
             case "imdbLink":
-                return $('#search a[href="https://www.imdb.com/title/tt8398600/"]>h3');
+                return $('#search a[href="https://www.imdb.com/title/tt8398600/"]');
               break;
             default:
                 return '';
