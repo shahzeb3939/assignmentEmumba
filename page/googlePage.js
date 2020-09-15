@@ -1,5 +1,5 @@
 class googlePage {
-    get url() { return "/" }
+    get url() { return "https://www.google.com/" }
 
     gotoGoogle() {
         browser.url(this.url)
