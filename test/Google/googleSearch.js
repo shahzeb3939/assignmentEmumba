@@ -5,6 +5,8 @@ import verifyGoogleSearch from "../../support/assertion/Google/verifyGoogleSearc
 import findLink from "../../support/action/Google/findLink"
 import openLinkInNewTab from "../../support/action/Google/openLinkInNewTab"
 import verifyIMDBPage from "../../support/assertion/Google/verifyIMDBPage"
+import clickOnLink from "../../support/action/Google/clickOnLink"
+import verifyFullCast from "../../support/assertion/Google/verifyFullCast"
 
 describe ("Google Search test", function () {
 
@@ -21,5 +23,10 @@ describe ("Google Search test", function () {
     it ("should open --  After Life (TV Series 2019– ) - IMDb  -- in a new tab", () => {
         openLinkInNewTab(findLink("imdbLink"));
         verifyIMDBPage();
+    })
+
+    it ("should click on --  See full cast  -- Link", () => {
+        clickOnLink('seeFullCast');
+        verifyFullCast();
     })
 })

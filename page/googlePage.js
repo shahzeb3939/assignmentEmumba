@@ -3,6 +3,17 @@ class googlePage {
     get googleImage() { return $(`img[alt="Google"]`) }
     get googleSearchInputField() { return $('input.gLFyf.gsfi') }
     get googleSearchInputButton() { return $('div.aajZCb input.gNO89b') }
+    get fullCastTitle() { return $('.subpage_title_block > div > h1') }
+
+    clickOnLink(link) {
+        switch(link) {
+            case 'seeFullCast':
+                $('#titleCast .see-more a').click();
+              break;
+            default:
+                return $('');
+          }
+    }
 
     linkReturn(link) {
         switch(link) {
