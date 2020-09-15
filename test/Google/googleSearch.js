@@ -5,6 +5,6 @@ describe ("Google Search test", function () {
 
     it ("should goto google.com", function () {
         gotoGoogle();
-        // verifyGoogle();
+        verifyGoogle();
     })
 })
