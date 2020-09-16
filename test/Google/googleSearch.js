@@ -7,6 +7,7 @@ import openLinkInNewTab from "../../support/action/Google/openLinkInNewTab"
 import verifyIMDBPage from "../../support/assertion/Google/verifyIMDBPage"
 import clickOnLink from "../../support/action/Google/clickOnLink"
 import verifyFullCast from "../../support/assertion/Google/verifyFullCast"
+import saveCastToExcel from "../../support/action/Excel/saveCastToExcel"
 
 describe ("Google Search test", function () {
 
@@ -28,5 +29,9 @@ describe ("Google Search test", function () {
     it ("should click on --  See full cast  -- Link", () => {
         clickOnLink('seeFullCast');
         verifyFullCast();
+    })
+
+    it ("should save 49 cast members to xlsx file", () => {
+        saveCastToExcel();
     })
 })
