@@ -33,6 +33,7 @@
   "dependencies": {
     "@wdio/cli": "^6.5.0",
     "core-js": "^3.6.5",
-    "regenerator-runtime": "^0.13.7"
+    "regenerator-runtime": "^0.13.7",
+    "xlsx": "^0.16.7"
   }
 }
