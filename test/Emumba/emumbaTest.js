@@ -11,6 +11,8 @@ import enterCredentials from "../../support/action/Emumba/enterCredentials"
 import verifyCredentials from "../../support/assertion/Emumba/verifyCredentials"
 import clickSignIn from "../../support/action/Emumba/clickSignIn"
 import verifySignIn from "../../support/assertion/Emumba/verifySignIn"
+import clickPostFlyer from "../../support/action/Emumba/clickPostFlyer"
+import verifyPostFlyerPage from "../../support/assertion/Emumba/verifyPostFlyerPage"
 
 describe ('Emumba App Test', function () {
     
@@ -44,6 +46,11 @@ describe ('Emumba App Test', function () {
         verifyCredentials();
         clickSignIn();
         verifySignIn(); 
+    })
+
+    it ('Should click on Post Flyer', () => {
+        clickPostFlyer();
+        verifyPostFlyerPage();
     })
 
 })
