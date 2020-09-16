@@ -7,6 +7,10 @@ import verifyRegisterPage from "../../support/assertion/Emumba/verifyRegisterPag
 import fillSignUp from "../../support/action/Emumba/fillSignUp"
 import verifySignUp from "../../support/assertion/Emumba/verifySignUp"
 import clickSignUp from "../../support/action/Emumba/clickSignUp"
+import enterCredentials from "../../support/action/Emumba/enterCredentials"
+import verifyCredentials from "../../support/assertion/Emumba/verifyCredentials"
+import clickSignIn from "../../support/action/Emumba/clickSignIn"
+import verifySignIn from "../../support/assertion/Emumba/verifySignIn"
 
 describe ('Emumba App Test', function () {
     
@@ -33,6 +37,13 @@ describe ('Emumba App Test', function () {
     it ('Should click on SignUp button', () => {
         clickSignUp();
         verifyLoginPage();
+    })
+
+    it ('Should enter valid credentials and SignIn', () => {
+        enterCredentials();
+        verifyCredentials();
+        clickSignIn();
+        verifySignIn(); 
     })
 
 })
