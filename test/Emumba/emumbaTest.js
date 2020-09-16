@@ -2,6 +2,8 @@ import gotoEmumbaApp from "../../support/action/Emumba/gotoEmumbaApp"
 import verifyHomePage from "../../support/assertion/Emumba/verifyHomePage"
 import clickLoginButton from "../../support/action/Emumba/clickLoginButton" 
 import verifyLoginPage from "../../support/assertion/Emumba/verifyLoginPage"
+import clickLink from "../../support/action/Emumba/clickLink" 
+import verifyRegisterPage from "../../support/assertion/Emumba/verifyRegisterPage"
 
 describe ('Emumba App Test', function () {
     
@@ -15,8 +17,9 @@ describe ('Emumba App Test', function () {
         verifyLoginPage();
     })
 
-    // it ('Should click the link --Not a user yet--', () => {
-
-    // })
+    it ('Should click the link --Not a user yet--', () => {
+        clickLink();
+        verifyRegisterPage();
+    })
 
 })
