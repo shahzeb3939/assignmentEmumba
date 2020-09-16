@@ -12,6 +12,11 @@ describe ('Emumba App Test', function () {
 
     it ('Should click on the Login Button', () => {
         clickLoginButton();
-        // verifyLoginPage();
+        verifyLoginPage();
     })
+
+    // it ('Should click the link --Not a user yet--', () => {
+
+    // })
+
 })
