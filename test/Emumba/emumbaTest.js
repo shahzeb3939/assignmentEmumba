@@ -6,6 +6,7 @@ import clickLink from "../../support/action/Emumba/clickLink"
 import verifyRegisterPage from "../../support/assertion/Emumba/verifyRegisterPage"
 import fillSignUp from "../../support/action/Emumba/fillSignUp"
 import verifySignUp from "../../support/assertion/Emumba/verifySignUp"
+import clickSignUp from "../../support/action/Emumba/clickSignUp"
 
 describe ('Emumba App Test', function () {
     
@@ -27,6 +28,11 @@ describe ('Emumba App Test', function () {
     it ('Should fill the Signup Form', () => {
         fillSignUp();
         verifySignUp();
+    })
+
+    it ('Should click on SignUp button', () => {
+        clickSignUp();
+        verifyLoginPage();
     })
 
 })
