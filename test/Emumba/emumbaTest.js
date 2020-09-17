@@ -17,6 +17,8 @@ import fillForm from "../../support/action/Emumba/fillForm"
 import verifyFormData from "../../support/assertion/Emumba/verifyFormData"
 import postForm from "../../support/action/Emumba/postForm"
 import verifyFormPost from "../../support/assertion/Emumba/verifyFormPost"
+import clickHomeButton from "../../support/action/Emumba/clickHomeButton"
+import verifyFlyerOnHome from "../../support/assertion/Emumba/verifyFlyerOnHome"
 
 
 describe ('Emumba App Test', function () {
@@ -63,6 +65,11 @@ describe ('Emumba App Test', function () {
         verifyFormData();
         postForm();
         verifyFormPost();
+    })
+
+    it ('Should navigate to Home Page', () => {
+        clickHomeButton();
+        verifyFlyerOnHome();
     })
 
 })

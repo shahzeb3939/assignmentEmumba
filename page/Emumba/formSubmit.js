@@ -7,6 +7,11 @@ class formSubmit {
     get tagsFormField() { return $('div[role="combobox"] input') }
     get postButton() { return $('button[type="submit"] span.MuiButton-label') }
     get alertMessage() { return $('div.MuiAlert-message') }
+    get homeButton() { return $('nav button:nth-child(1) a') }
+
+    clickHomeButton() {
+        this.homeButton.click();
+    }
 
     alertMessageText() {
         return this.alertMessage.getText();
