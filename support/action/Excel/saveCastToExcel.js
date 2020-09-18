@@ -21,7 +21,8 @@ export default () => {
         jArray.push(jObj);
     }
 
-    var nws = xlsx.utils.json_to_sheet(jArray);
-    xlsx.utils.book_append_sheet(wb,nws,"Series Cast");
+    xlsx.utils.sheet_add_json(ws, jArray)
+    // var nws = xlsx.utils.json_to_sheet(jArray);
+    // xlsx.utils.book_append_sheet(wb,nws,"Series Cast");
     xlsx.writeFile(wb, "qaautomation.xlsx")
 }
