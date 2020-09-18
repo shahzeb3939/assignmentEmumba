@@ -9,10 +9,6 @@ class appHome extends basePage {
         return this.createFlyerButton.getText();
     }
 
-    // clickPostFlyerButton() {
-    //     this.postFlyerButton.click();
-    // }
-
     logoIconText() {
         return this.logoIcon.getText();
     }

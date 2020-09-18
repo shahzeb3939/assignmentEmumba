@@ -10,10 +10,6 @@ class covidSaversRegister extends basePage {
     get confirmPassword() { return $('input[name="confirm_password"]') }
     get signUpButton() { return $('form a') }
 
-    // clickSignUpButton() {
-    //     this.signUpButton.click();
-    // }
-
     confirmPasswordTagText() {
         return this.confirmPasswordTag.getText();
     }

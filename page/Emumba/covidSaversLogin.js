@@ -9,14 +9,6 @@ class covidSaversLogin extends basePage {
 
     get signInButton() { return $('span.MuiButton-label') }
 
-    // clickSignInButton() {
-    //     this.signInButton.click();
-    // }
-
-    // clickNotUserButton() {
-    //     this.notUserButton.click();
-    // }
-
     homeTagText() {
         return this.homeTag.getText();
     }
