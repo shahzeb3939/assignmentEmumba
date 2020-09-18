@@ -1,4 +1,6 @@
-class covidSaversRegister {
+import basePage from "../../page/Base/basePage"
+
+class covidSaversRegister extends basePage {
     get confirmPasswordTag() { return $('div:nth-child(4) label') }
 
     get firstName() { return $('input[name="first_name"]') }
@@ -8,9 +10,9 @@ class covidSaversRegister {
     get confirmPassword() { return $('input[name="confirm_password"]') }
     get signUpButton() { return $('form a') }
 
-    clickSignUpButton() {
-        this.signUpButton.click();
-    }
+    // clickSignUpButton() {
+    //     this.signUpButton.click();
+    // }
 
     confirmPasswordTagText() {
         return this.confirmPasswordTag.getText();

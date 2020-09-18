@@ -19,9 +19,9 @@ class formSubmit extends basePage {
         return this.alertMessage.getText();
     }
 
-    clickPostButton() {
-        this.postButton.click();
-    }
+    // clickPostButton() {
+    //     this.postButton.click();
+    // }
 
     titleNameText() {
         return this.titleName.getText();

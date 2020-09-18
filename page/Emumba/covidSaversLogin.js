@@ -1,4 +1,6 @@
-class covidSaversLogin {
+import basePage from "../../page/Base/basePage"
+
+class covidSaversLogin extends basePage {
     get homeTag() { return $('div h5') }
     get notUserButton() { return $('form a') }
 
@@ -7,13 +9,13 @@ class covidSaversLogin {
 
     get signInButton() { return $('span.MuiButton-label') }
 
-    clickSignInButton() {
-        this.signInButton.click();
-    }
+    // clickSignInButton() {
+    //     this.signInButton.click();
+    // }
 
-    clickNotUserButton() {
-        this.notUserButton.click();
-    }
+    // clickNotUserButton() {
+    //     this.notUserButton.click();
+    // }
 
     homeTagText() {
         return this.homeTag.getText();
