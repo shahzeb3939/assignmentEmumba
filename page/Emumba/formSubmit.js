@@ -1,4 +1,6 @@
-class formSubmit {
+import basePage from "../../page/Base/basePage"
+
+class formSubmit extends basePage {
     get titleName() { return $('div.MuiGrid-grid-xs-4 h6') }
     get titleFormField() { return $('div:nth-child(1) > div > textarea:nth-child(1)') }
     get detailsFormField() { return $('form div:nth-child(2) textarea') }

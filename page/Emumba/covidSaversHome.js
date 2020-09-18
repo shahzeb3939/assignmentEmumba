@@ -14,9 +14,9 @@ class covidSaversHome extends basePage {
         return this.recentFlyer.getText();
     }
 
-    clickHomeLoginButton() {
-        this.clickElement(this.homeLoginButton);
-    }
+    // clickHomeLoginButton() {
+    //     this.clickElement(this.homeLoginButton);
+    // }
 
 }
 
