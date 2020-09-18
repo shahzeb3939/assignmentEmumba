@@ -1,4 +1,6 @@
-class covidSaversHome {
+import basePage from "../../page/Base/basePage"
+
+class covidSaversHome extends basePage {
     get homeUrl() { return 'https://emumba-test.herokuapp.com/' }
     get homeLoginButton() { return $('nav button:nth-child(3)') }
     get recentFlyer() { return $('div.MuiTypography-root.MuiTypography-h5.MuiTypography-paragraph') }
@@ -13,7 +15,7 @@ class covidSaversHome {
     }
 
     clickHomeLoginButton() {
-        this.homeLoginButton.click();
+        this.clickElement(this.homeLoginButton);
     }
 
 }
