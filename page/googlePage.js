@@ -1,4 +1,6 @@
-class googlePage {
+import basePage from "../Base/basePage"
+
+class googlePage extends basePage {
     get url() { return "https://www.google.com/" }
     get googleImage() { return $(`img[alt="Google"]`) }
     get googleSearchInputField() { return $('input.gLFyf.gsfi') }

@@ -1,10 +1,7 @@
 import googlePage from "../../../page/googlePage"
 
 export default (searchQuery) => {
-    googlePage.googleSearchInputField.waitForDisplayed();
-    googlePage.googleSearchInputField.click();
+    googlePage.clickElement(googlePage.googleSearchInputField);
     googlePage.googleSearchInputField.setValue(searchQuery);
-    googlePage.googleSearchInputButton.waitForDisplayed();
-    googlePage.googleSearchInputButton.click();
-    browser.pause(2000);
+    googlePage.clickElement(googlePage.googleSearchInputButton);
 }
