@@ -1,4 +1,4 @@
-import basePage from "../../page/Base/basePage"
+import basePage from "../../Base/basePage"
 
 class covidSaversHome extends basePage {
     get homeUrl() { return 'https://emumba-test.herokuapp.com/' }

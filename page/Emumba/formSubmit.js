@@ -1,4 +1,4 @@
-import basePage from "../../page/Base/basePage"
+import basePage from "../../Base/basePage"
 
 class formSubmit extends basePage {
     get titleName() { return $('div.MuiGrid-grid-xs-4 h6') }

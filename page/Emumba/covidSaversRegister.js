@@ -1,4 +1,4 @@
-import basePage from "../../page/Base/basePage"
+import basePage from "../../Base/basePage"
 
 class covidSaversRegister extends basePage {
     get confirmPasswordTag() { return $('div:nth-child(4) label') }

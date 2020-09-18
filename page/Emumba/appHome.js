@@ -1,4 +1,4 @@
-import basePage from "../../page/Base/basePage"
+import basePage from "../../Base/basePage"
 
 class appHome extends basePage {
     get logoIcon() { return $('div > h6') }

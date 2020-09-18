@@ -1,4 +1,4 @@
-import basePage from "../../page/Base/basePage"
+import basePage from "../../Base/basePage"
 
 class covidSaversLogin extends basePage {
     get homeTag() { return $('div h5') }
