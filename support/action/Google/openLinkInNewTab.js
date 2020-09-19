@@ -1,5 +1,4 @@
-import googlePage from "../../../page/googlePage"
 
-export default (linkSelector) => {
-    browser.newWindow(linkSelector.getAttribute('href'));
+export default (link) => {
+    browser.newWindow(link);
 }
