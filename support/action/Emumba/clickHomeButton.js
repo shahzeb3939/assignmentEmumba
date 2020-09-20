@@ -4,5 +4,5 @@ import covidSaversHome from "../../../page/Emumba/covidSaversHome"
 export default () => {
     formSubmit.clickElement(formSubmit.homeButton)
     browser.saveScreenshot(`${covidSaversHome.titleRecentFlyer()}.png`)
-    browser.pause(500);
+    // browser.pause(500);
 }

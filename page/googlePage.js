@@ -1,3 +1,4 @@
+import xlsx from "xlsx"
 import basePage from "../Base/basePage"
 
 class googlePage extends basePage {
@@ -14,6 +15,28 @@ class googlePage extends basePage {
 
     gotoGoogle() {
         browser.url(this.url)
+    }
+
+    saveGoogleSearchResultsInExcel(searchText) {
+        var wb = xlsx.readFile("qaautomation.xlsx");
+        var jArray = [];
+        var jObj = {};
+        if (wb.Sheets[`${searchText} - Search Results`] == undefined) {
+            var ws = xlsx.utils.json_to_sheet(jArray);
+            xlsx.utils.book_append_sheet(wb, ws, `${searchText} - Search Results`);
+        } else {
+            var ws = wb.Sheets[`${searchText} - Search Results`];
+        }
+
+        for (var i=0;i<this.searchResultLength;i++) {
+            jObj = {};
+            jObj["Search Result Text"] = this.searchResultsText[i].getText();
+            jObj["Search Result Link"] = this.searchResultsLink[i].getAttribute('href');
+            jArray.push(jObj);
+        }
+
+        xlsx.utils.sheet_add_json(ws, jArray)
+        xlsx.writeFile(wb, "qaautomation.xlsx")
     }
 }
 
