@@ -35,5 +35,5 @@ export default () => {
     covidSaversRegister.clickElement(covidSaversRegister.confirmPassword);
     covidSaversRegister.confirmPassword.setValue(inputData[5]["value"]);
 
-    browser.pause(500);
+    // browser.pause(500);
 }
