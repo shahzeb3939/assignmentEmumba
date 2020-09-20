@@ -23,7 +23,7 @@ class excel {
      * Returns json data from WorkSheet
      * @param {xlsx.WorkSheet} workSheet 
      */
-    jsonDataFromWorkSheet (workSheet) {
+    readJsonDataFromWorkSheet (workSheet) {
         return xlsx.utils.sheet_to_json(workSheet);
     }
     
