@@ -1,4 +1,3 @@
-// import xlsx from "xlsx"
 import excel from "../excelClass/excel"
 import basePage from "../Base/basePage"
 
@@ -19,19 +18,14 @@ class googlePage extends basePage {
     }
 
     saveGoogleSearchResultsInExcel(searchText) {
-        // var wb = xlsx.readFile("qaautomation.xlsx");
         var wb = excel.readExcelWorkBook("qaautomation.xlsx");
 
         var jArray = [];
         var jObj = {};
         if (wb.Sheets[`${searchText} - Search Results`] == undefined) {
-            // var ws = xlsx.utils.json_to_sheet(jArray);
             var ws = excel.createEmptyWorkSheet();
-
-            // xlsx.utils.book_append_sheet(wb, ws, `${searchText} - Search Results`);
             excel.appendWorkSheetToWorkBook(wb, ws, `${searchText} - Search Results`);
         } else {
-            // var ws = wb.Sheets[`${searchText} - Search Results`];
             var ws = excel.readExcelWorkSheet(wb, `${searchText} - Search Results`);
         }
 
@@ -42,9 +36,7 @@ class googlePage extends basePage {
             jArray.push(jObj);
         }
 
-        // xlsx.utils.sheet_add_json(ws, jArray);
         excel.addJsonArrayToWorkSheet(ws, jArray);
-        // xlsx.writeFile(wb, "qaautomation.xlsx");
         excel.writeWorkBookToFile(wb, "qaautomation.xlsx");
     }
 }
